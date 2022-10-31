@@ -15,7 +15,7 @@
 - janela de operação
 - janela de resultado
 
-[😊⭐⭐Clique aqui para acessar⭐⭐😊](https://romeusorionaet.github.io/Operandonumeros/)
+[😊⭐⭐Clique aqui para acessar⭐⭐😊](https://romeusorionaet.github.io/OperandoNumeros/)
 
 ## Tecnologias utilizadas
 

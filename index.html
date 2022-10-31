@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200&family=DM+Sans&family=Epilogue:wght@400;800&family=Open+Sans:wght@300&family=Palanquin&family=Poppins&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Exercício</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="list">
+                <h1>Sobre o exercício</h1>
+                <p>Contém:</p>
+                <ul>
+                    <li>Funções.</li>
+                    <li>Variáveis.</li>
+                    <li>Operações matemáticas.</li>
+                    <li>Operadores comparativos.</li>
+                    <li>Condicional.</li>
+                </ul>
+
+                <p>Nesse exercício, você irá solicitar ao <strong>usuário</strong> que ele insira dois números e, a partir daí, calcular:</p>
+                <ul>
+                    <li>A soma dos dois números;</li>
+                    <li>A subtração dos dois números;</li>
+                    <li>A multiplicação dos dois números;</li>
+                    <li>A multiplicação dos dois números;</li>
+                    <li>O resto da divisão dos dois números;</li>
+                    <li>Verifique se a soma dos dois números é par (ou ímpar);</li>
+                    <li>Verifique se os dois números inseridos são iguais (ou diferentes).</li>
+                </ul>
+
+                <div class="divWrapper">
+                    <button id="showBtnStart" type="button">Começar</button>
+                    <input type="checkbox" id="btnCheckBox" value="" />
+                </div>
+            </section>
+
+            <div class="screenOperation hide">
+                <label for="number1">Digite o primeiro número:</label>
+                <input type="Number" id="number1" onfocus="this.value=''"/>
+                <label for="number2">Digite o segundo número:</label>
+                <input type="Number" id="number2" />
+
+                <div class="buttonsScreenCalc">
+                    <button id="btnReturn" type="button">Voltar</button>
+                    <button id="btnCalc" type="button">Calcular</button>
+                </div>
+            </div>
+
+            <div class="screenResult hide">
+                <h2>Resultado</h2>
+                <ul>
+                    <li>resultado aqui.</li>
+                </ul>
+                <ol>
+                    <li id="li1">resultado aqui.</li>
+                    <li id="li2">resultado aqui.</li>
+                </ol>
+                <button id="turnStart" type="button">Início</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

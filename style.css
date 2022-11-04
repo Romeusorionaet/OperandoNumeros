@@ -146,8 +146,9 @@ input:checked[type="checkbox"] {
 
 .buttonsScreenCalc {
     display: flex;
-    gap: 27.6rem;
-    justify-content: space-evenly
+    gap: 26rem;
+    justify-content: center;
+    margin-bottom: .5rem;
 }
 
 .hide {

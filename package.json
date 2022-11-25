@@ -1,0 +1,20 @@
+{
+  "name": "operando-numeros",
+  "version": "1.0.0",
+  "description": "Faz operações simples pré definidas de números",
+  "main": "./js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Romeusorionaet/OperandoNumeros.git"
+  },
+  "author": "Romeu soares de souto",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Romeusorionaet/OperandoNumeros/issues"
+  },
+  "homepage": "https://github.com/Romeusorionaet/OperandoNumeros#readme"
+}

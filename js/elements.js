@@ -1,4 +1,4 @@
-let btnCheckBox = document.querySelector('#btnCheckBox');
+let btnCheckBox = document.querySelector('#Check');
 let btnStart = document.querySelector('#showBtnStart');
 let btnReturn = document.querySelector('#btnReturn');
 let clickBtnStart = document.querySelector('#btnCalc');

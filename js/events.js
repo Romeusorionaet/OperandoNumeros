@@ -28,13 +28,34 @@ export default function Events({modal, checkerEvenOddEqualsDifferent}) {
         }
         checkerEvenOddEqualsDifferent(n1, n2);
     });
+    document.addEventListener("DOMContentLoaded", function(){
+        btnCheckBox.addEventListener('change', function(){
+              localStorage.check ?
+                 localStorage.check = localStorage.check.indexOf(this.id+",") == -1 
+                 ? localStorage.check+this.id+"," 
+                 : localStorage.check.replace(this.id+",","") : localStorage.check = this.id+","
+        });
+        if(localStorage.check){ 
+            btnCheckBox.checked = localStorage.check ? true : false  
+        }
+        changeValueColor(btnCheckBox.checked)
+    });
+    function changeValueColor(value) { 
+        if(value == false){
+            localStorage.setItem('storedValue', changeStyle.style.backgroundImage = "url(img/backgroundNight.png)");
+            localStorage.setItem('storedValue', changeStyle.style.color="white")    
+        }else{
+            localStorage.setItem('storedValue', changeStyle.style.backgroundImage = "url(img/backgroundMorning.jpg)");
+            localStorage.setItem('storedValue',  changeStyle.style.color="black")
+        }
+    }
     btnCheckBox.addEventListener('change', function checkBoxVerification(){
         if(this.checked){
-            changeStyle.style.color="white";
-            changeStyle.style.backgroundImage = "url(img/backgroundNight.png)";
-        }else{
-            changeStyle.style.color="black";
             changeStyle.style.backgroundImage = "url(img/backgroundMorning.jpg)";
+            changeStyle.style.color="black"; 
+        }else{
+            changeStyle.style.backgroundImage = "url(img/backgroundNight.png)";
+            changeStyle.style.color="white";
         }
     });
     turnStart.addEventListener('click', function toggleEndStart(){

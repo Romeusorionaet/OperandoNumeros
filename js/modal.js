@@ -1,4 +1,4 @@
-import {n1, n2} from "./elements.js"
+import {n1, n2, changeStyle} from "./elements.js"
 
 export default function Modal({
     screenList,
@@ -20,10 +20,34 @@ export default function Modal({
         n1.value = '';
         n2.value = '';
     }
+
+    function verificationInputValue(){
+        let cleanField = (n1.value && n2.value) == ''
+        if(cleanField == true){
+            alert('Existe campo vazio')
+            return true
+        }
+    }
+
+    function changeValueColor(value) { 
+        if(value == false){
+            localStorage.setItem('storedValue', 
+            changeStyle.style.backgroundImage = "url(img/backgroundNight.png)");
+
+            localStorage.setItem('storedValue', changeStyle.style.color="white")    
+        }else{
+            localStorage.setItem('storedValue', 
+            changeStyle.style.backgroundImage = "url(img/backgroundMorning.jpg)");
+
+            localStorage.setItem('storedValue', changeStyle.style.color="black")
+        }
+    }
     return {
         toggleScreenEnd,
         toggleScreen,
-        reset
+        reset,
+        changeValueColor,
+        verificationInputValue
     }
 }
 

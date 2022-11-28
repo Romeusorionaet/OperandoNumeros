@@ -14,6 +14,3 @@ const modal = Modal ({
 })
 
 Events({modal, checkerEvenOddEqualsDifferent})
-
-
-  
